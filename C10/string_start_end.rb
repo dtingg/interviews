@@ -1,6 +1,6 @@
 # C10: Given a string, a starting point and and endpoint return the string between the starting point and the input. 
 # The end point can occur before the start point, see example. 
-# Ex// Given "ThisIsAString"  End-point is 3 and Start-point 9 will return "ringThis"  
+# Ex: Given "ThisIsAString"  End-point is 3 and Start-point 9 will return "ringThis"  
 
 # Time: O(1)
 # Space: O(n)
