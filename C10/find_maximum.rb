@@ -6,7 +6,7 @@
 def find_maximum(array)
   return nil if !array || array.empty?
   
-  max = 0
+  max = array[0]
   
   array.each do |number|
     if number > max
@@ -30,3 +30,28 @@ p find_maximum(array3)
 p find_maximum(array4)
 p find_maximum(array5)
 p find_maximum(array6)
+
+# find the max value in an array (was later told the array could contain both ints and numbers stored as strings... 
+# also can be negatives)
+
+def find_maximum2(array)
+  return nil if !array || array.empty?
+  
+  max = array[0].to_i
+  
+  array.each do |number|
+    int = number.to_i
+    
+    if int > max
+      max = int
+    end
+  end
+  
+  return max
+end
+
+array7 = [1, 3, "5", 4] # 5
+array8 = ["4", -3, 8] # 8
+
+p find_maximum2(array7)
+p find_maximum2(array8) 
