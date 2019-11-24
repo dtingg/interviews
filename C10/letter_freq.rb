@@ -29,5 +29,6 @@ def letter_freq(string)
   return "#{max_letter}#{max_count}"
 end
 
-p letter_freq("rrSSSqqrrrr") # r4
-p letter_freq("aaabbbccdd") # a3
+p letter_freq("rrSSSqqrrrr") # r4 - answer at end of string
+p letter_freq("aaabbbccdd") # a3 - answer at beginning of string
+p letter_freq("bbccdd") # b2 - tie, but should be first

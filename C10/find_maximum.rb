@@ -4,7 +4,7 @@
 # Space: O(1)
 
 def find_maximum(array)
-  return nil if !array || array.empty?
+  return nil if !array || array.empty? # array nil or empty
   
   max = array[0]
   
@@ -50,8 +50,8 @@ def find_maximum2(array)
   return max
 end
 
-array7 = [1, 3, "5", 4] # 5
-array8 = ["4", -3, 8] # 8
+array7 = [1, 3, "5", 4] # 5 - string is the max
+array8 = ["4", -3, 8] # 8 - regular integer is the max
 
 p find_maximum2(array7)
 p find_maximum2(array8) 
