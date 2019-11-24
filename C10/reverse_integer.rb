@@ -1,5 +1,8 @@
 # C10: Reverse an integer: given 123, return 321
 
+# Time: O(n). N is number of digits in integer.
+# Space: O(n). N is the number of digits in integer.
+
 def reverse_int(int)
   return int if !int # nil check
   
@@ -24,13 +27,13 @@ def reverse_int(int)
   end
 end
 
-int1 = 123 # 321
-int2 = 5 # 5
-int3 = 22 # 22
-int4 = 40 # 4
-int5 = 0 # 0
-int6 = nil # nil
-int7 = -123 # -321
+int1 = 123 # 321 - regular case
+int2 = 5 # 5 - single num
+int3 = 22 # 22 - repeating num
+int4 = 40 # 4 - includes 0
+int5 = 0 # 0 - 0
+int6 = nil # nil - nil
+int7 = -123 # -321 - negative
 
 p reverse_int(int1) 
 p reverse_int(int2) 
