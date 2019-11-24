@@ -1,7 +1,7 @@
 # C10: Find maximum in an array (no negatives, all int, no duplicates)
 
 # Time: O(n). N is length of array.
-# Space: O(1),
+# Space: O(1)
 
 def find_maximum(array)
   return nil if !array || array.empty?

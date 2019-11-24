@@ -19,15 +19,15 @@ def average_even_nums(array)
     return 0
   else
     average = overall_total / eligible_nums.to_f
-    return average.round(2)
+    return average.round(1)
     
   end
 end
 
 array1 = [1, 2, 3, 4, 5] # 3.0
 array2 = [1, 3, 5] # 0
-array3 = [2, 4, 8] # 4.67
-array4 = [2, 3, 4, 6] # 4
+array3 = [2, 4, 8] # 4.7
+array4 = [2, 3, 4, 6] # 4.0
 
 p average_even_nums(array1)
 p average_even_nums(array2)
