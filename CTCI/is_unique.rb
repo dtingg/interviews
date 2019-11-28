@@ -1,4 +1,4 @@
-# CTCI: Implement an algorithm to determine if a string has all unique characters.
+# CTCI: Is Unique: Implement an algorithm to determine if a string has all unique characters.
 
 # Time: O(n)
 # Space: O(n)
