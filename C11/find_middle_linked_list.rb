@@ -25,7 +25,7 @@ end
 # Bonus: Return nth last item from linked list
 
 # Time: O(n)
-# Space: O(n)
+# Space: O(1)
 
 def find_nth_from_end(linked_list, n)
   first = head
@@ -39,4 +39,6 @@ def find_nth_from_end(linked_list, n)
     first = first.next
     second = second.next
   end
+  
+  return first.value
 end
