@@ -21,12 +21,14 @@ p human_string(["rock", "paper", "scissors", "cat", "dog", "fish"]) # "rock, pap
 # Time: O(1)
 # Space: O(1)
 
-def human_string_limit(array)
+def human_string_limit(array, limit)
   length = array.length
   
-  new_string = "#{array[0]}, #{array[1]}, and #{length - 2} more"
+  new_string = array[0...limit].join(", ")
+  
+  new_string << ", and #{array.length - limit} more"
   
   return new_string
 end
 
-p human_string_limit(["rock", "paper", "scissors", "cat", "dog", "fish"]) # "rock, paper, and 4 more"
+p human_string_limit(["rock", "paper", "scissors", "cat", "dog", "fish"], 2) # "rock, paper, and 4 more"
