@@ -30,3 +30,13 @@ end
 
 p urlify("Mr John Smith    ", 13) # "Mr%20John%20Smith"
 p urlify("Happy Ending  ", 12) # "Happy%20Ending"
+
+# Using built-in gsub
+def urlify2(string, true_length)
+  string.gsub!(" ", "%20")
+  
+  return string
+end
+
+p urlify2("Mr John Smith", 13) # "Mr%20John%20Smith"
+p urlify2("Happy Ending", 12) # "Happy%20Ending"
