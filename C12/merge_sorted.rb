@@ -34,3 +34,14 @@ def merge_sorted(array1, array2)
 end
 
 p merge_sorted([1, 3, 5, 7], [2, 4, 6]) # [1, 2, 3, 4, 5, 6, 7]
+
+# Merge three sorted
+def merge_three_sorted(array1, array2, array3)
+  new_array = merge_sorted(array1, array2)
+  
+  final_array = merge_sorted(new_array, array3)
+  
+  return final_array
+end
+
+p merge_three_sorted([1,4,6], [2], [1,3,5,7]) # [1,1,2,3,4,5,6,7]
