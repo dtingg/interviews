@@ -21,5 +21,6 @@ def delete_nth_linked(list, n)
     current = current.next
   end
   
+  current.value = current.next.value
   current.next = current.next.next
 end
